@@ -6,8 +6,42 @@
     <meta name="description" content="A dating simulator based on confessions from Gunn Confessions."/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" charset="utf-8"></script>
   </head>
   <body>
-    <!--  -->
+    <div class="title" id="title"></div>
+    <div class="idpausd hidden" id="rapididentity">
+      <div class="header">Palo Alto USD Portal</div>
+      <div class="content">
+        <p>Who are you?</p>
+        <div class="portraits">
+          <div class="person">
+            <img src="./images/betsy.png" alt="Ugly girl" data-person="FM">
+            <span class="person-name">Betsy Lang</span>
+          </div>
+          <div class="person">
+            <img src="./images/charles.png" alt="Ugly boy" data-person="MM">
+            <span class="person-name">Charles Wichenson</span>
+          </div>
+        </div>
+        <p>Who do you like?</p>
+        <div class="portraits">
+          <div class="person">
+            <img src="./images/justin.jpg" alt="Pretty boy" data-person="MO">
+            <span class="person-name">Justin Bieber</span>
+          </div>
+          <div class="person">
+            <img src="./images/selena.jpg" alt="Pretty girl" data-person="FO">
+            <span class="person-name">Selena Gomez</span>
+          </div>
+        </div>
+        <p class="hidden" id="error">A valid person and significant other is required.</p>
+        <button id="start">Login</button>
+      </div>
+      <div class="game hidden" id="game-wrapper">
+        <div class="log" id="game-log"></div>
+      </div>
+    </div>
   </body>
 </html>

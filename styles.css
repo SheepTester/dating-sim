@@ -2,4 +2,134 @@ body {
   font-size: 0;
   font-family: 'Ubuntu Mono', monospace;
   margin: 0;
+  white-space: pre-wrap;
+}
+
+.title {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+.typing-cursor {
+  position: absolute;
+}
+.typing-cursor::after {
+  content: '_';
+}
+
+.idpausd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EBEEF0;
+  animation: fade-out .5s reverse;
+  color: black;
+  overflow: auto;
+}
+.header {
+  color: #F9F9F9;
+  background-color: #E52526;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+}
+.content {
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.idpausd p {
+  font-size: 18px;
+}
+#start {
+  -webkit-appearance: none;
+  font: inherit;
+  border: none;
+  background: none;
+  background-color: #36464E;
+  color: #F9F9F9;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+}
+#start:hover {
+  background-color: #E52526;
+}
+.portraits {
+  display: flex;
+}
+.person {
+  padding: 10px;
+  flex: 1 0 0;
+}
+.person img {
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+.selected-person {
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.person-name {
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+#error {
+  color: red;
+}
+
+.game {
+  background-image: url('./images/background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: fade-out .5s reverse;
+}
+.log {
+  position: fixed;
+  width: 50%;
+  max-width: 500px;
+  left: 25%;
+  bottom: 45%;
+  font-size: 18px;
+  color: white;
+}
+@media (max-width: 700px) {
+  .log {
+    left: 20px;
+    width: 75%;
+  }
+}
+.log-paragraph {
+  display: block;
+  margin-top: 10px;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.hidden {
+  display: none;
 }
