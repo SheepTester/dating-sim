@@ -1,0 +1,104 @@
+Three views:
+- beginning animation, typing out "Dating in the Juul Room," which then
+  floats away
+- rapididentity page with character selection
+- actual game view; ideally this'd be a plain text log in front of a blurred
+  bathroom background
+
+How the player will see it:
+
+"Dating in the Juul Room" gets typed out in the middle of the screen, black text
+on white
+
+The title fades to a RapidIdentity-like page with "Palo Alto USD Portal" on a
+red bar at the top asking the user to identify themselves (either Charles
+Wichenson or Betsy Lang) and choose a significant other (either Justin Bieber or
+Selena Gomez).
+
+The user then presses "Login"
+
+The RapidIdentity page fades to a blurred image of a bathroom background.
+
+The following text gets typed on the screen; as this is not dialogue, it can be
+skipped by pressing enter:
+
+  You were inspired by posts on Gunn Confessions to finally ask out the [boy/girl]
+  you liked since eighth grade. Surprisingly, she accepted.
+
+  You decided to meet in the gender-neutral Juul room at school. For some reason,
+  the school had installed toilets and sinks in the Juul room, but they made great
+  chairs and tables. You aren't alone; half of Madame Lizundia's class is there partying,
+  but they ignore you (1240).
+
+  You face [SO name] with packets of hot chocolate from the SEC between you two (182).
+
+The user is then presented with options:
+
+- REVEAL A SECRET
+  A secret is randomly chosen, and there's a chance either your SO is impressed,
+  or they report you to the Administration.
+  - did graffiti (1400)
+- SMALL TALK
+  - "The teacher's bathroom in the math office is so clean and pristine." (2201)
+  - comment on those slow people who take up the entire hallway (670)
+- UNPOPULAR OPINION
+  If the opinion is actually unpopular, she won't like you as much.
+
+  POPULAR:
+  779. The Atlantic article about Gunn was actually incredibly insightful and
+  many of the problems it describes are still present today.
+  854. Airpods are overrated.
+  948. The substitute teacher we have to say hello to is the best.
+  1298. Fairy Tale is one of the best anime.
+  1312. Props to TBN for going live every morning.
+  1352. Beyblades are fidget spinners but cooler.
+  1353. Harry Potter isn't that great.
+  1365. You can do whatever you want with milk.
+  1598. Goldfish are the best snack.
+  1701. The competition at Gunn is actually beneficial to the community as it
+  drives people to be more ambitious and determined to reach their academic goals.
+  1817. The thing on Instagram that showcases fashion at Gunn has become worse.
+  2005. It's better to date a close friend than a random person you just met.
+  2019. The boy who sexually harassed the girl in GRT should be kicked off.
+  2237. The CS requirement will make everyone hate the class like how everyone
+  hates living skills.
+  2263. Friends is a boring show.
+  2350. The Wall of Rejection perpetuates Gunn's culture of academic stress.
+  2469. The ice cream truck melody is annoying.
+  2576. Grades and academics matter.
+
+  UNPOPULAR:
+  255. Our Spanish teacher is a genuinely nice teacher.
+  709. We should stop hating on T-Series.
+  841. In-N-Out is pretty bad; their smell makes me nauseous.
+  1277. The Wall of Rejection is harmful to underclassmen and perpetuates
+  the need to get into a good college.
+  1349. #metoo is just a movement towards victimization.
+  1888. The CS requirement is a good idea because it would be useful.
+  1944. Ariana Grande's songs are bad and her voice is annoying.
+
+Timing is key; interrupt your SO and she hates you, but moments of awkward silence
+also makes her dislike you. Repeating something you already said will also make
+her distrust you.
+
+There are also random events:
+
+- SO SPILLS HOT CHOCOLATE PACKET
+  They go to the sink to wash her hands with soap. You have to react very quickly to
+  warn her about #1093 or they get mad at you for not warning them.
+- SO PACES AROUND
+  While your SO walks around talking, suddenly it'll appear in red text that
+  they are about to step in a puddle. In this moment you have to warn them, or
+  they'll get mad at you. (533)
+- FIVE MINUTES PASS
+  (there's an in-game timer) You are responsible for reminding your SO to go
+  outside every five minutes to avoid getting high. (1272)
+- SOMEONE VOMITS (1415) / SHORT INDIAN KID VAPES (2047)
+  You can choose to report them; has no immediate effect on gameplay, but the
+  ending will state that your reputation is ruined if you report at least once.
+- TEA SMELLING CEREMONY (2169)
+  You can choose to join, but your SO will protest; however, by joining, the smell
+  gets better, and there'll be no need to go out every five minutes.
+- COOL TEACHER (2204)
+  A teacher walks in and sees you dating. He makes eye contact with you and says to
+  be careful doing what you're doing, then walks out.
