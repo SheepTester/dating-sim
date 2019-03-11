@@ -41,6 +41,7 @@ function typeAnimation(text, dashInterrupt = true) {
         typedText.nodeValue = text;
         untypedText.nodeValue = '';
       }
+      clearInterval(intervalID);
       span.removeChild(cursor);
       resolve(false);
       done = true;
@@ -52,8 +53,10 @@ document.addEventListener('DOMContentLoaded', async e => {
   const titleView = document.getElementById('title');
   const {span, promise} = typeAnimation('Dating in the Juul Room');
   titleView.appendChild(span);
+  /* skip intro?
   await promise;
   await delay(500);
+  //*/
   const rapidIdentity = document.getElementById('rapididentity');
   rapidIdentity.classList.remove('hidden');
   const error = document.getElementById('error');
@@ -70,6 +73,7 @@ document.addEventListener('DOMContentLoaded', async e => {
       e.target.classList.add('selected-person');
     }
   });
+  /* skip character selection?
   await new Promise(res => {
     document.getElementById('start').addEventListener('click', e => {
       if (selectedMe && selectedSO) res();
@@ -80,8 +84,10 @@ document.addEventListener('DOMContentLoaded', async e => {
   });
   const amFemale = selectedMe.dataset.person[0] === 'F';
   const soFemale = selectedSO.dataset.person[0] === 'F';
-  // const amFemale = true;
-  // const soFemale = false;
+  /*/
+  const amFemale = true;
+  const soFemale = false;
+  //*/
   const gameView = document.getElementById('game-wrapper');
   gameView.classList.remove('hidden');
   const log = document.getElementById('game-log');
@@ -90,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async e => {
     if (e.keyCode === 13 && onEnterKey) onEnterKey();
   });
   function logSkippable(text) {
-    const {span, promise, stop} = typeAnimation(text);
+    const {span, promise, stop} = typeAnimation(text, false);
     span.classList.add('log-paragraph');
     log.appendChild(span);
     onEnterKey = () => {
