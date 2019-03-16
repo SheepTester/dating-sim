@@ -105,25 +105,57 @@ body {
   width: 100%;
   height: 100%;
   animation: fade-out .5s reverse;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
-.log {
-  position: fixed;
-  width: 50%;
+.log, .events {
+  flex: 1 0 0;
   max-width: 500px;
-  left: 25%;
-  bottom: 45%;
-  font-size: 18px;
-  color: white;
+  padding: 20px;
+  position: relative;
 }
-@media (max-width: 700px) {
-  .log {
-    left: 20px;
-    width: 75%;
-  }
+#game-log {
+  position: absolute;
+  bottom: 30%;
+  left: 20px;
+  right: 20px;
 }
 .log-paragraph {
   display: block;
   margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+.buttons {
+  position: absolute;
+  top: 70%;
+  left: 20px;
+  right: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-btn {
+  -webkit-appearance: none;
+  font: inherit;
+  font-size: 15px;
+  color: white;
+  border: none;
+  background: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  flex: none;
+}
+.game-btn:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.game-btn:focus {
+  outline: none;
 }
 
 @keyframes fade-out {

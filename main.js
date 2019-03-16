@@ -23,28 +23,25 @@ function typeAnimation(text, dashInterrupt = true) {
     typedText.nodeValue += text[progress];
     untypedText.nodeValue = untypedText.nodeValue.slice(1);
     progress++;
-    if (progress >= text.length) {
-      clearInterval(intervalID);
-      span.removeChild(cursor);
-      resolve(true);
-      done = true;
-    }
+    if (progress >= text.length) finish();
   }, TYPING_SPEED);
+  function finish() {
+    clearInterval(intervalID);
+    span.removeChild(cursor);
+    span.removeChild(untypedText);
+    resolve(true);
+    done = true;
+  }
   return {
     span, promise,
     stop() {
       if (done) return;
       if (progress < text.length - 1 && dashInterrupt) {
-        typedText.nodeValue += M_DASH;
-        untypedText.nodeValue = untypedText.nodeValue.slice(1);
+        typedText.nodeValue += M_DASH + untypedText.nodeValue.slice(1);
       } else {
         typedText.nodeValue = text;
-        untypedText.nodeValue = '';
       }
-      clearInterval(intervalID);
-      span.removeChild(cursor);
-      resolve(false);
-      done = true;
+      finish();
     }
   };
 }
@@ -107,6 +104,6 @@ document.addEventListener('DOMContentLoaded', async e => {
     return promise;
   }
   await logSkippable(`You were inspired by posts on Gunn Confessions to finally ask out the ${soFemale ? 'girl' : 'boy'} you liked since eighth grade. Surprisingly, ${soFemale ? 'she' : 'he'} accepted.`);
-  await logSkippable(`You decided to meet in the gender-neutral Juul room at school. For some reason, the school had installed toilets and sinks in the Juul room, but they made great chairs and tables. You aren't alone; half of Madame Lizundia's class is there partying, but they ignore you.`);
+  await logSkippable(`You decided to meet in the gender-neutral Juul room at school. For some reason, the school had installed toilets and sinks in the Juul room, but they made great chairs and tables. You aren't alone; half of a French class is there partying, but they ignore you.`);
   await logSkippable(`You face ${soFemale ? 'Selena' : 'Justin'} with packets of hot chocolate from the SEC between you two.`);
 });
