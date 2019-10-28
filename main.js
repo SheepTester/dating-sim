@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async e => {
   const titleView = document.getElementById('title');
   const {span, promise} = typeAnimation('Dating in the Juul Room');
   titleView.appendChild(span);
-  /* skip intro?
+  //* skip intro?
   await promise;
   await delay(500);
   //*/
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async e => {
       e.target.classList.add('selected-person');
     }
   });
-  /* skip character selection?
+  //* skip character selection?
   await new Promise(res => {
     document.getElementById('start').addEventListener('click', e => {
       if (selectedMe && selectedSO) res();
